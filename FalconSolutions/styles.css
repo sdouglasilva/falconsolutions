@@ -1,0 +1,197 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+        /* Definição da variável para o gradiente dourado */
+        --gold-gradient: linear-gradient(45deg, #d4af37, hsl(51, 100%, 50%), #b8860b);
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #000000;
+}
+.div-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.gradiente{
+    font-family: "Bona Nova", serif;
+    font-weight: 550;
+    font-style: normal;
+    background-image: linear-gradient(45deg, #F0DBA6,#F0DBA6, #632B0F );
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Contêiner centralizado */
+.container {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho principal */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    background: url('eagle.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.main-header button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 1.5px;
+    background: -webkit-linear-gradient(180deg,#F0DBA6,#F0DBA6, #632b0fde);
+    transition: 0.9s;
+    /* background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent; */
+}
+
+.main-header button:hover {
+    background: -webkit-linear-gradient(45deg,  #996e01d3,#ffc6408e, #ffef0cbb);
+}
+
+/* Seção de conteúdo */
+.content-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content-item p {
+    font-size: 1rem;
+}
+
+/* Seção de serviços */
+.services-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-section ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Seção de testemunhos */
+.testimonials-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 1rem;
+}
+
+/* Seção de estratégias de marketing */
+.marketing-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.marketing-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.marketing-section ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+img {
+    height: 35vh;
+    max-width: 100%;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-item, .testimonial {
+        width: 100%;
+    }
+}
