@@ -79,6 +79,7 @@ body {
 
 /* Seção de conteúdo */
 .content-section {
+    gap: 50px;
     padding: 40px 0;
     background-color: #f4f4f4;
     text-align: center;
@@ -92,6 +93,7 @@ body {
 .content-box {
     display: flex;
     justify-content: space-around;
+    text-align: justify;
     flex-wrap: wrap;
 }
 
@@ -171,6 +173,29 @@ body {
     padding: 40px 0;
     text-align: center;
 }
+/* botoes */
+
+.content-box > button{
+    margin: 30px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 1.5px;
+    background: -webkit-linear-gradient(180deg,#F0DBA6,#F0DBA6, #632b0fde);
+    transition: 0.9s;
+
+}
+.content-box > button:hover{
+    background: -webkit-linear-gradient(45deg,  #F0DBA6,#F0DBA6, #632b0fde);
+
+}
+
+
+
+
 
 .marketing-section h2 {
     font-size: 2rem;
@@ -187,6 +212,17 @@ img {
     height: 35vh;
     max-width: 100%;
     display: block;
+}
+.car > img {
+    border-radius: 2px;
+    padding: 10px;
+}
+.car{
+    background-color: #000000;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsividade */
