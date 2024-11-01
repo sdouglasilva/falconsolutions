@@ -1,0 +1,929 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bona Nova", serif;;
+    overflow-x: hidden;
+
+    
+}
+:root{
+
+        /* Definição da variável para o gradiente dourado */
+        --gold-gradient: linear-gradient(45deg, #d4af37, hsl(51, 100%, 50%), #b8860b);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #000000;
+    width: 100%; /* Garante que ocupe toda a largura */
+    overflow-x: hidden;
+
+}
+h1{
+    animation: pulsar 5s infinite;
+}
+.div-logo{
+    display: flex;
+    justify-content: center;
+}
+.div-logo > img{
+    margin-bottom: 10   px;
+    width: 22rem;
+    height: 22rem;
+}
+
+.gradiente{
+    font-family: "Bona Nova", serif;
+    font-weight: 550;
+    font-style: normal;
+    /* cor de texto */
+    color: #f2d67b; /* Cor dourada para os títulos */
+
+    
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Contêiner centralizado */
+.container {
+    background-color: #000;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container > p {
+    font-family: "Bona Nova", serif;
+}
+.marketing-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do cabeçalho principal */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    /* background: url('eagle.jpg') no-repeat center center/cover; */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    transition: 20s;
+
+}
+.main-header:hover{
+    background-color: #000;
+    
+    opacity: 5;
+}
+@media(max-width:600px){
+    .main-header{
+        border-radius: 50px;
+    }
+}
+
+.main-header h1 {
+    font-size: 2.1  rem;
+    margin-bottom: 20px;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+.div-logo {
+    position: relative; /* Permite que o botão flutuante se posicione em relação à div */
+}
+
+/* .whatsapp-button {
+    position: fixed;
+    width: 190px;
+    height: 50px;
+    bottom: 40px;
+    left: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 2px 20px 20px 20px ;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-decoration: none;} */
+
+    /* teste */
+    .whatsapp-button {
+        position: fixed;
+        width: 190px;
+        height: 50px;
+        bottom: 40px;
+        left: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 0 10px 20px 20px;
+        text-align: center;
+        font-size: 14px; /* Aumentei um pouco o tamanho da fonte */
+        box-shadow: 2px 2px 3px #999;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centraliza o texto vertical e horizontalmente */
+        text-decoration: none;
+    }
+    
+
+
+.whatsapp-button h5 {
+    position: relative;
+    left: 25px;
+    font-weight: 700;
+    text-align: justify;
+    font-size: 20px; /* Ajuste o tamanho da fonte para melhor adequação */
+    margin: 0; /* Remove margens do título */
+}
+
+.whatsapp-button img {
+    position: absolute;
+    width: 32px; /* Tamanho do ícone do WhatsApp */
+    height: 35px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        left: 35px;
+    }
+
+    .whatsapp-button h5 {
+        color: #82e7a7;
+        font-size: 8px; /* Tamanho reduzido em telas menores */
+
+    }
+    .whatsapp-button img {
+        left: 0px;
+        bottom: 0px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .whatsapp-button h5 {
+        font-size: 6px; /* Tamanho reduzido em telas menores */
+    }
+    .whatsapp-button img {
+        width: min-content;
+        height: max-content;    }
+}
+
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        bottom: 35px;
+        left: 30px;
+    }
+}
+
+/* tirar */
+/* @media (max-width: 480px) {
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .whatsapp-button >img {
+        position: relative;
+        left: 20px;
+        right: 66px;
+        
+    }
+} */
+
+
+/* Seção de conteúdo */
+.content-section {
+    gap: 50px;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.content-section h2 {
+    color: #9b7642;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+/* .content-section.info{
+    background: -webkit-linear-gradient(#996e01d3,#ffc6408e, #ffaa0cbb);
+} */
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+/* .content-item {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    background-color: rgb(50, 49, 49);
+    border: 1px solid #dddddd2f;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.content-item > img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.content-item h3 {
+    color: #b8860b;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content-item p {
+    color: white;
+    font-size: 1rem;
+    width: 100vw;
+    text-align: left;
+} */
+
+/* teste */
+.content-item {
+    display: flex;
+    gap: 15px; /* Aumentei o espaçamento entre os itens */
+    flex-direction: row;
+    background-color: #333; /* Um fundo mais suave, mantendo o contraste */
+    border: 1px solid #dddddd2f;
+    padding: 20px;
+    margin: 15px 0; /* Mais espaçamento vertical */
+    width: 100%;
+    border-radius: 8px; /* Adicionei cantos arredondados para suavizar o design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombras mais suaves e realistas */
+    align-items: center; /* Alinhei os itens verticalmente */
+}
+
+.content-item > img {
+    width: 250px;
+    height: 100px;
+    /* border: 2px solid #b8860b;  */
+}
+
+.content-item h3 {
+    color: #9b7642; /* Um dourado mais claro para melhorar a visibilidade */
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.content-item p {
+    color: #ccc; /* Uma cor de texto mais suave */
+    font-size: 1rem;
+    margin: 0; /* Removi o espaçamento interno */
+    line-height: 1.4; /* Melhor leitura */
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .content-item {
+        flex-direction: column; /* Empilha os itens em telas menores */
+        text-align: center; /* Centraliza o conteúdo em telas pequenas */
+    }
+
+    .content-item > img {
+        margin-bottom: 10px;
+    }
+}
+
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+}
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Mantém a imagem de fundo atrás dos conteúdos */
+}
+.box{
+    background-color: #000;
+}
+
+/* Seção de serviços */
+.services-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-section ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.services-section .about{
+    background-color: #eb5252;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+
+}
+/* Carrosell */
+.carousel.slide .carousel-inner .carousel-item.active{
+    background-color: #000000;
+    height: 80vh;
+    padding: 2rem;
+
+}
+.carousel-item.active > img{
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    filter: contrast();
+}
+/* Seção de testemunhos */
+.testimonials-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    
+    width: 30vw;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.testemunho{
+    display: flex;
+    width: max-content;
+}
+
+.testimonial h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 1rem;
+}
+
+/* Seção de estratégias de marketing */
+/* .marketing-section {
+    color: #fafafa;
+    padding: 40px 0;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+.marketing-section p {
+
+}
+.marketing-section img{
+
+}
+.marketing-section:hover{
+    background-color: #000;
+} */
+
+/* teste */
+.marketing-section {
+    background-color: #222; /* Fundo escuro para um bom contraste com o texto */
+    color: #fafafa;
+    padding: 60px 20px; /* Mais espaço nas laterais */
+    text-align: center;
+    width: 100%;
+    min-height: 100vh; /* Mudado para min-height para permitir flexibilidade em telas menores */
+    display: flex; /* Flexbox para centralização */
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.marketing-section h2 {
+    font-size: 2.5rem; /* Título maior para chamar atenção */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.marketing-section p {
+    font-size: 1.2rem; /* Aumentei o tamanho do texto */
+    margin-bottom: 30px; /* Espaçamento abaixo do parágrafo */
+    line-height: 1.5; /* Aumentei o espaçamento entre linhas para melhor legibilidade */
+}
+
+.marketing-section img {
+    max-width: 80%; /* Imagens ocupam no máximo 80% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
+    border-radius: 10px; /* Bordas arredondadas nas imagens para suavizar a aparência */
+}
+
+@media screen and (max-width: 768px) {
+    .marketing-section h2 {
+        font-size: 2rem; /* Tamanho do título em telas menores */
+    }
+
+    .marketing-section p {
+        font-size: 1rem; /* Tamanho do texto em telas menores */
+    }
+}
+
+
+.money-time{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+@media(max-width:600px){
+    .money-time{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        opacity: 2px;
+    }
+
+}
+/* botoes */
+
+.container > button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid rgba(243, 238, 238, 0.089);
+    box-shadow: 0px 0px 20px 0px rgba(251, 255, 3, 0.281);
+    background: -webkit-linear-gradient(160deg,#F0DBA6,#F0DBA6, #632b0fde);
+    transition: 0.9s;
+
+}
+.container > button:hover{
+    border: 1.5px solid rgba(0, 0, 0, 0.61);
+    padding: 15px 25px;
+    background: -webkit-linear-gradient(45deg,  #F0DBA6,#F0DBA6, #632b0fde);
+
+}
+.accordion-body{
+    text-align: justify;
+}
+.accordion-button{
+    text-align: center;
+    background-color: #000000de;
+    color: #F0DBA6;
+    /* filter: blur(0.5px); */
+}
+.accordion-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0000006c;
+}
+
+
+.accordion-header > img{
+    height: 100vh;
+    width: 100vw;
+    border-radius: 400% 100px 200px 10%;
+}
+/* s */
+
+
+
+.marketing-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.marketing-section ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.marketing-section-foot{
+    background-color: #000;
+    z-index: -1;
+
+}
+/* Vídeo */
+video.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter: grayscale(0) blur(0.5px);
+}
+.video-bg{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+    
+
+}
+
+img {
+    height: 35vh;
+    max-width: 100%;
+    display: block;
+}
+
+.content-info > img {
+    border-radius: 85px 15px 35px 40px;
+    padding: 10px;
+    
+}
+
+/* .content-info{
+    padding-block: 1rem;
+    height: max-content;
+
+    border-radius: 7px 7px 7px 7px;
+    background-color: #fffcfc;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: borderFlash 4s infinite;
+} */
+.container > h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9b7642; /* Cor dourada para os títulos */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-item, .testimonial {
+        width: 100%;
+    }
+}
+
+
+.void {
+    margin: 0px 0px 160px 150px;
+	width: 100%;
+	max-width: 1024px;
+	position: relative;
+    z-index: 1;
+	aspect-ratio: 1 / 1;
+}
+
+
+/* .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    width: 80vw;
+    height: 100vh;
+    text-align: center;
+    max-width: 100%;
+} */
+iframe{
+    width: 90vw;
+    height: 20vh;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.9s;
+}  
+.gallery img:hover {
+    transform: scale(2.3) translate(35%, -40%) perspective(transition);
+    rotate: (45deg);
+}
+.card {
+	width: 27%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 16px 24px;
+	gap: 8px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #535062;
+}
+a {
+	text-decoration: none;
+	color: unset;
+}
+.model-name {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	color: #3B2ED0;
+	display: block;
+}
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+
+@keyframes rotateCW {
+	from {
+		transform: translate3d(0px, -50%, -1px) rotate(-45deg);
+	}
+	to {
+		transform: translate3d(0px, -50%, 0px) rotate(-315deg);
+	}
+}
+@keyframes rotateCCW {
+	from {
+		transform: rotate(45deg);
+	}
+	to {
+		transform: rotate(315deg);
+	}
+}
+@keyframes pulseGlow {
+	from {
+		background-size: 60%;
+	}
+	to {
+		background-size: 100%;
+	}
+}
+@keyframes borderFlash {
+    0% {
+      border-color: #8b7500; /* Dourado escuro inicial */
+    }
+    50% {
+      border-color: #c5b358; /* Dourado mais claro */
+    }
+    100% {
+      border-color:#F0DBA6 ; /* Volta ao dourado escuro */
+    }
+}
+
+.center-circle {
+	position: absolute;
+	width: 230px;
+	aspect-ratio: 1 / 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(img/logo_png.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+	box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0), 0px 30px 60px -12px rgba(12, 5, 46, 0);
+	border-radius: 10%;
+}
+
+
+/* .mask:after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	right: 0;
+	display: block;
+} */
+/* TEST AREA: */
+
+.elemento-visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+.testimonials.footer{
+    width: 50vw;
+    background-color: #05003b;
+}
+
+
+@keyframes slide-right {
+    0% {
+    transform: translateX(-100%);
+    }
+    100% {
+    transform: translateX(25);
+    }
+}
+
+/* efeito para girar e pulsar imagem */
+
+@keyframes girar-pulsar {
+    0% {
+    transform: scale(5) rotate(0deg);
+    }
+    50% {
+    transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+    transform: scale(0.9) rotate(10deg);
+    opacity: 2px;
+    }
+}
+
+
+@keyframes pulsar{
+
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+/* ultimo teste  */
+ /* Estilos gerais do rodapé */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    align-content: end;
+    padding: 25px;
+    margin: 50px;
+    background-color: #000; /* Cor de fundo preta */
+    color: #9b7642; /* Cor do texto dourada */
+}
+
+.footer-section {
+    text-align: end;
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer h3 {
+    font-size: 1.5em;
+    color: #9b7642; /* Cor dourada para os títulos */
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 1em;
+    color: #9b7642; /* Cor dourada para o texto */
+    line-height: 1.6;
+}
+
+.footer a {
+    color: #9b7642; /* Links também em dourado */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.testimonial > img {
+    background-image: url('./img/logo_png.png');
+    width: 80vw;
+    height: 40vh;
+}
+.testimonial{
+    background-color: #000;
+}
+
+/* Tornar o rodapé responsivo */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+
+/* media teste */
+
+@media (max-width: 768px) {
+    .content-item, .testimonial {
+        width: 100%; /* Já está presente */
+        margin-bottom: 20px; /* Adicionar espaçamento extra */
+    }
+    
+    .container {
+        padding: 20px; /* Reduzir o padding em dispositivos móveis */
+    }
+    
+    h1, h2, h3 {
+        font-size: 1.8rem; /* Ajustar os tamanhos de cabeçalhos para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    /* .whatsapp-button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .whatsapp-button h5 {
+        font-size: 0.8rem; /* Tamanho mais legível para botões pequenos */
+
+    .container {
+        padding: 15px; /* Reduzir ainda mais o padding para telas bem pequenas */
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Ajuste dos títulos principais */
+    }
+
+    p {
+        font-size: 0.9rem; /* Tamanho menor para parágrafos */
+    }
+
+    .footer-section {
+        text-align: center;
+        margin: 10px 0; /* Ajuste de espaçamento entre seções no footer */
+    }
+}
+
